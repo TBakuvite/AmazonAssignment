@@ -1,0 +1,189 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-19T01:47:15.082Z",
+        "line": 6,
+        "name": "User search shoes for men",
+        "description": "",
+        "id": "buy-shoes-from-amazon;user-search-shoes-for-men",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18851512000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User in the Amazon homepage",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.user_in_the_amazon_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2291858000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"shoes for men\" in search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"shoes for men\"",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinitions.AmazonStepDefs.user_enters_in_search_bar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14036453000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Users selects the last auto-complete option from dropdown menu suggestions",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.users_selects_the_last_auto_complete_option_from_dropdown_menu_suggestions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebElement.click()\" because \"this.resultsPage.firstResult\" is null\n\tat StepDefinitions.AmazonStepDefs.among_results_the_user_selects_the_first_shoe_from_list(AmazonStepDefs.java:37)\n\tat ✽.among results the user selects the first shoe from list(file:///Users/toghrulnovruzlu/IdeaProjects/AmazonAssignment/src/test/resources/Features/amazon.feature:10)\n",
+              "duration": 23919000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "among results the user selects the first shoe from list",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.among_results_the_user_selects_the_first_shoe_from_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 838000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user selects 3 from quantity dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefinitions.AmazonStepDefs.the_user_selects_from_quantity_dropdown(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 452000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User should be able to click add_to_cart button",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.user_should_be_able_to_click_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User should be able to go to shopping cart",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.user_should_be_able_to_go_to_shopping_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1352000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Item quantity should be as 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.AmazonStepDefs.item_quantity_should_be_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 473000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Item price should be correct",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.item_price_should_be_correct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User deletes the item from the cart",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.user_deletes_the_item_from_the_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User validates shopping cart is empty",
+            "match": {
+              "location": "StepDefinitions.AmazonStepDefs.user_validates_shopping_cart_is_empty()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@amazon"
+          }
+        ]
+      }
+    ],
+    "name": "Buy shoes from amazon",
+    "description": "  As a user, I should be able to search shoes for men, add to shopping cart and delete the item from the cart",
+    "id": "buy-shoes-from-amazon",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/amazon.feature",
+    "tags": [
+      {
+        "name": "@amazon",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
